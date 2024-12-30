@@ -9,14 +9,31 @@ def main():
     if height_float >= 120:
             if age_int < 12:
                   print("Yes, you can ride the rollercoaster")
-                  print("Please pay $5")
+                  photo = input("Do you want a photo taken? Y or N ")
+                  if photo == "Y":
+                        print("Please pay extra $3 for the photo")
+                        print("The total bill is $8")
+                  else:
+                        print("Please pay $5")
+                        
             elif age_int >= 12 and age_int <= 18:
                   print("Yes, you can ride the rollercoaster")
-                  print("Please pay $7")
+                  photo = input("Do you want a photo taken? Y or N ")
+                  if photo == "Y":
+                        print("Please pay extra $3 for the photo")
+                        print("The total bill is $10")
+                  else:
+                        print("Please pay $7")
+                  
             else:
                   print("Yes, you can ride the rollercoaster")
-                  print("Please pay $12")
-
+                  photo = input("Do you want a photo taken? Y or N ")
+                  if photo == "Y":
+                        print("Please pay extra $3 for the photo")
+                        print("The total bill is $15")
+                  else:
+                        print("Please pay $12")
+                  
           
     else:
           print("No, you can't ride the rollercoaster")
