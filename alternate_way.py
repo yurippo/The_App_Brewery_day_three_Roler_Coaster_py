@@ -19,8 +19,12 @@ def main():
             elif age_int >= 12 and age_int <= 18:
                   bill = 7
                   print("Youth tickets are $7")
+
+            elif age_int >= 45 and age_int <= 55: #I could also use 45 <= age_int <= 55  a simpler way to do it
+                  print("Midlife crisis Everything is going to be ok. Have a free ride on us!")
+                  bill = 0                  
                   
-                  
+            
             else:
                   bill = 12
                   print("Adult tickets are $12")
@@ -30,6 +34,8 @@ def main():
             if wants_photo_to_lower == "y":
                   bill += 3
                   print(f"Please pay extra $3 for the photo. The total bill is ${bill}")
+            else:
+                  print(f"No problem! The total bill is ${bill} enjoy the ride")
           
     else:
           print("No, you can't ride the rollercoaster")
